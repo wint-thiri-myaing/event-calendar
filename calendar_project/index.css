@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  /* height: 100%; */
+  padding: 50px;
+}
+
+.navbar {
+  width: 80%;
+  height: 70px;
+  margin: auto;
+  /* display: inline-block; */
+}
+
+.navbar li {
+  list-style: none;
+  float: left;
+}
+
+.left {
+  float: left;
+  font-size: 22px;
+  width: 30%;
+  line-height: 160%;
+}
+
+.right {
+  width: 70%;
+  height: inherit;
+  float: left;
+}
+
+.month {
+  float: left;
+  width: 40%;
+  height: inherit;
+  font-size: 20px;
+  color: black;
+  margin-left: 200px;
+}
+
+.year {
+  float: left;
+  width: 30%;
+  height: inherit;
+  font-size: 20px;
+  color: black;
+}
+
+.month a, .year a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+}
+
+.right .m_name {
+  /* display: inline-block; */
+  width: 150px;
+  color: black;
+  background-color: #fff;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid black;
+  width: 11.42%;
+  height: 40px;
+  color: white;
+  text-align: center;
+}
+
+td {
+  border-left: 1px black solid;
+  border-bottom: 1px black solid;
+  font-weight: bold;
+  width: 11.42%;
+  height: 120px;
+  font-size: 14px;
+  color: black;
+  vertical-align: top;
+  padding: 10px 0 0 10px;
+}
+
+.today {
+  background: skyblue;
+}
+
+td:nth-of-type(7) {
+  border-right: 1px black solid;
+}
+
+td:nth-of-type(1) {
+  color: red;
+}
+
+td:nth-of-type(7) {
+  color: red;
+}
+
+th:nth-of-type(1) {
+  background-color: red;
+}
+
+th:nth-of-type(2), th:nth-of-type(3), th:nth-of-type(4), th:nth-of-type(5), th:nth-of-type(6) {
+  background-color: black;
+}
+
+th:nth-of-type(7) {
+  background-color: red;
+}
+
+.days {
+  width: 80%;
+}
+
+.days td .active {
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+
+@media screen and (max-width:720px) {
+  .weekdays th, .days td {
+    width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays th, .days td {
+    width: 12.5%;
+  }
+  .days td .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays th, .days td {
+    width: 12.2%;
+  }
+}
